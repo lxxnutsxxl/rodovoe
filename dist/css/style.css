@@ -1,5 +1,6 @@
 
 
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -229,4 +230,8 @@ th {
 *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "ABeeZee", sans-serif;
 }
