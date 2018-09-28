@@ -1,3 +1,48 @@
 body {
   font-family: $base-font-family;
 }
+
+#wrapper {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: $secondary-font-family;
+} 
+
+a {
+	font-family: $secondary-font-family;
+	color: $link-color;
+}
+
+.table-holder {
+	overflow-x: auto;
+	max-width: 100%; 
+}
+
+table {
+	border: 2px solid red;
+	empty-cells: hide;
+	margin: 0 auto;
+	table-layout: fixed;
+	min-width: 800px;
+	background-color: blue;
+}
+
+td, th {
+	border: 1px solid red;
+	padding: 10px;
+}

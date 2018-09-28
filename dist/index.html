@@ -7,14 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=ABeeZee:400,400i" rel="stylesheet">
-    <!--<link rel="stylesheet" href="style.min.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway:300,300i,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <table>
+    <div id="wrapper">
+        <header>
+            <div class="container"></div>
+        </header>
+        <main>
+            <div class="container">
+                    <h1>Hello World!</h1>
+    <div class="table-holder">
+        <table>
         <thead>
             <tr>
-                <th>col 1</th>
+                <th>col 1sdfhfgjmhj,ghmkfkgjfgj <br>sdkghfwtgkldfjkhlsdk</th>
                 <th>col 2</th>
                 <th>col 3</th>
                 <th>col 4</th>
@@ -22,17 +30,20 @@
             </tr>
         </thead>
         <tbody>
+        <colgroup>
+            <col span=3 style="background-color: yellow">
+        </colgroup>
         <tr>
             <td>cell</td>
             <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
+            <td colspan="3">cell</td>
+            <td rowspan="2">cell</td>
             <td>cell</td>
         </tr>
         <tr>
             <td>cell</td>
             <td>cell</td>
-            <td>cell</td>
+            <td></td>
             <td>cell</td>
             <td>cell</td>
         </tr>
@@ -54,6 +65,7 @@
             </tr>
         </tfoot>
     </table>
+    </div>
     <ol>
         <li>serif: символы этого семейства прописываются с засечками;</li>
         <li>sans-serif: засечки на буквах отсутствуют;</li>
@@ -62,8 +74,12 @@
         <li>monospace: моноширинный шрифт.</li>
     </ol>
     <ul>
-        <li><a href="https://caniuse.com/#feat=woff" target="_blank">woff</a></li>
-        <li><a href="https://caniuse.com/#search=woff2" target="_blank">woff2</a></li>
+        <li>
+            <a href="https://caniuse.com/#feat=woff" target="_blank">
+                <i class="icon-google"></i> woff
+            </a>
+        </li>
+        <li><a href="https://caniuse.com/#search=woff2" target="_blank"><i class="icon-instagram"></i>woff2</a></li>
         <li><a href="https://caniuse.com/#feat=ttf" target="_blank">ttf</a></li>
         <li><a href="https://caniuse.com/#feat=eot" target="_blank">eot</a></li>
         <li><a href="https://caniuse.com/#feat=svg" target="_blank">svg</a></li>
@@ -74,5 +90,9 @@
     <div class="img-holder"><img src="images/service-icon-2.svg" alt="image description"></div>
     <div class="img-holder"><img src="images/service-icon-6.svg" alt="image description"></div>
     <div class="img-holder"><img src="images/test-magazin.jpg" alt="image description"></div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
 </body>
 </html>
