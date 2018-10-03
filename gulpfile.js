@@ -4,9 +4,12 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var concatCss = require('gulp-concat-css');
 var cleanCSS = require('gulp-clean-css');
-var rename = require("gulp-rename");
+var rename = require("gulp-rename"); 
+var imagemin = require('gulp-imagemin');
+var imageminJpegRecompress = require('imagemin-jpeg-recompress');
+var imageminPngquant = require('imagemin-pngquant');
 
-gulp.task('serve', ['sass', 'mincss'], function() {
+gulp.task('serve', ['sass', 'mincss', 'imagemini'], function() {
 
     browserSync.init({
         server: {
@@ -14,7 +17,7 @@ gulp.task('serve', ['sass', 'mincss'], function() {
         }
     });
 
-    gulp.watch("src/sass/**", ['sass', 'mincss']).on('change', browserSync.reload);
+    gulp.watch("src/sass/**", ['sass', 'mincss', 'imagemini']).on('change', browserSync.reload);
     gulp.watch("dist/*.html").on('change', browserSync.reload);
 
 });
@@ -39,4 +42,18 @@ gulp.task('mincss', ['sass'], function() {
 
 });
 
-gulp.task('default', ['serve']);
+gulp.task('imagemini', function() { 
+    return gulp.src('src/images/**')
+        .pipe(imagemin())
+        .pipe(imagemin([ 
+          imageminJpegRecompress({
+            progressive: true,
+            max: 80,
+            min: 70
+          }),
+          imageminPngquant({quality: '80'})
+        ]))
+        .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('default', ['serve']); 

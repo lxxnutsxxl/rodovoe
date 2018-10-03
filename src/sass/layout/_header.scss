@@ -1,0 +1,95 @@
+header { 
+	background-image: url(images/head_bg.png);
+	background-size: cover;
+	padding-bottom: 50px;
+	.head	{ 
+	 	background-color: rgba(#0D0D0D, 0.3);
+		height: 52px;   
+	}
+	nav	{ 
+		width: 74%;
+		display: inline-block;
+	}
+	.top_func { 
+		width: 25%;
+		display: inline-block; 
+		.top_button {
+		    color: #fff;
+		    font-weight: 500;
+		    font-size: 12px;
+		    display: inline-block;
+		    background: linear-gradient(197.09deg, #E8291D 38.27%, #880B0B 132.58%);
+		    box-shadow: 0px 4px 4px rgba(30, 162, 255, 0.2), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		    border-radius: 25.5px;
+		    border: none;
+		    line-height: 37px;
+		    padding: 0 20px;
+		    margin-right: 10px; 
+		    &:hover {
+		    	background: linear-gradient(197.09deg, #880B0B 38.27%, #E8291D 132.58%); 
+		    }
+		}
+		.phone_top {
+			display: inline-block;
+			color: #fff;
+		    font-weight: 700;
+		    font-size: 16px;
+		    line-height: 52px;
+	        margin: 0; 
+		}
+	}
+	.logo {
+		padding: 40px 0;
+	}
+	.top_info {
+		h2 {
+		    font-size: 27px;
+			color: #fff;
+			font-weight: bold;
+		}
+		h3 {
+		    font-size: 25px;
+			color: #fff;
+			font-weight: normal;
+		}
+	}
+	.loca {  
+		margin-top: 30px;
+	    span { 
+   			display: inline-block;
+		    background: linear-gradient(69.35deg, #45B81D 11.93%, rgba(69, 184, 29, 0) 92.12%);
+		    padding: 15px 70px 15px 25px;
+		    color: #fff;
+		    font-weight: bold; 
+		    font-size: 20px;
+		    margin-left: 20px;
+	    }
+	    img {
+	    	vertical-align: middle; 
+	    }
+	}  
+}
+ul.menu {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	li {
+		display: inline-block;
+	    width: 19%;
+   		text-align: center; 
+		a {
+			color: #fff;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 52px;
+			padding-bottom: 15px;
+			&.active {
+				border-bottom: 4px solid #E8291D;
+			}
+			&:hover {
+				border-bottom: 4px solid #E8291D;
+				text-decoration: none;
+			}
+		}
+	}
+}

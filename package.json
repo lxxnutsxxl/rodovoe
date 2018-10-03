@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "file:bootstrap",
+    "gulp-imagemin": "^4.1.0",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^6.0.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
