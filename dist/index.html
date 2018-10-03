@@ -25,7 +25,7 @@
                         </ul>
                     </nav> 
                     <div class="top_func">
-                        <button class="top_button">Оставить заявку</button>
+                        <button class="top_button" data-toggle="modal" data-target="#modal_all">Оставить заявку</button>
                         <p class="phone_top">8-916-114-93-65</p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                                 <input type="text" name="name" placeholder="Имя">
                                 <input type="text" name="phone" placeholder="Телефон">
                                 <input type="text" name="email" placeholder="Почта"> 
-                                <p>Отправкой, Вы подтверждаете согласние<br>на обработку  персональных данных.</p>
+                                <p></p>
                                 <button type="submith">Записаться на экскурсию</button>
                             </form>
                         </div>
@@ -69,13 +69,13 @@
                         <h3>Родовое в цифрах</h3>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <p>Возведенно более<br><span>120 домов</span></p>
+                        <p>Нам более<br><span>15 лет</span></p>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
                         <p>Построенно более<br><span>15 км дорог </span></p>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <p>Нам более<br><span>15 лет</span></p>
+                        <p>Возведенно более<br><span>120 домов</span></p>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
                         <p>В поселение<br><span>389 поместий</span></p>
@@ -107,7 +107,7 @@
                     <p>Детский вопрос: как родить, воспитать и выучить ребенка в поместье</p>
                     <p class="bg_green">Увидеть организацию альтернативных источников энергии</p>
                     <p>Пообщаться с единомышленниками, организаторами поселения. Задать интересующие вас вопросы и получить ценные рекомендации опытных поселенцев</p>
-                    <button class="main_button">Записаться сейчас!</button>
+                    <button class="main_button" data-toggle="modal" data-target="#modal_all">Записаться сейчас!</button>
                 </div>
             </div> 
             <div class="main_4">
@@ -192,10 +192,59 @@
                            </div>
                         </div>  
                     </div>
-                    <button class="main_button">Записаться на экскурсию</button>
+                    <button class="main_button" data-toggle="modal" data-target="#modal_all">Записаться на экскурсию</button>
                 </div>    
                 <div class="main_7">   
                     <h3>Наши фотографии</h3>
+                    <div class="slider">
+                        <div class="slide-list">
+                            <div class="slide-wrap"> 
+                                <div class="slide-item">
+                                    <img src="images/carusel/1.jpg" alt="" /> 
+                                </div> 
+                                <div class="slide-item">
+                                    <img src="images/carusel/2.jpg" alt="" /> 
+                                </div>  
+                                <div class="slide-item">
+                                    <img src="images/carusel/3.jpg" alt="" /> 
+                                </div> 
+                                <div class="slide-item">
+                                    <img src="images/carusel/4.jpg" alt="" /> 
+                                </div> 
+                                <div class="slide-item">
+                                    <img src="images/carusel/5.jpg" alt="" /> 
+                                </div> 
+                                <div class="slide-item">
+                                    <img src="images/carusel/6.jpg" alt="" /> 
+                                </div>
+                                <div class="slide-item">
+                                    <img src="images/carusel/7.jpg" alt="" /> 
+                                </div> 
+                                <div class="slide-item">
+                                    <img src="images/carusel/8.jpg" alt="" /> 
+                                </div> 
+                                <div class="slide-item">
+                                    <img src="images/carusel/9.jpg" alt="" /> 
+                                </div> 
+                                <div class="slide-item">
+                                    <img src="images/carusel/10.jpg" alt="" /> 
+                                </div> 
+                                <div class="slide-item">
+                                    <img src="images/carusel/11.jpg" alt="" /> 
+                                </div> 
+                                <div class="slide-item">
+                                    <img src="images/carusel/12.jpg" alt="" /> 
+                                </div> 
+                                <div class="slide-item">
+                                    <img src="images/carusel/13.jpg" alt="" /> 
+                                </div> 
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="navy prev-slide"></div>
+                        <div class="navy next-slide"></div>
+                        <div class="auto play"></div>
+                    </div>
                 </div>  
                 <div class="main_8">   
                     <h3>Не нашли ответ на ваш вопрос?<br><span>Звоните<br>8 (916) 114-93-65</span></h3>
@@ -209,7 +258,7 @@
                                     <input type="" name="" placeholder="Имя*">
                                     <input type="" name="" placeholder="E-mail*">
                                     <input type="" name="" placeholder="Телефон*">
-                                    <textarea rows="4" placeholder="Напишите свой вопрос*"></textarea>
+                                    <textarea rows="4" placeholder="Текст сообщения*"></textarea>
                                     <button type="submith">Отправить</button>
                                 </form>
                             </div>
@@ -221,18 +270,21 @@
                 <div class="main_9">   
                     <h3>Наша команда</h3>
                     <div class="row">
-                        <div class="col-1 col-sm-2 col-lg-3">
+                        <div class="col-1 col-sm-3 col-lg-3">
                         </div>
-                        <div class="col-10 col-sm-4 col-lg-3">
+                        <div class="col-10 col-sm-2 col-lg-2">
                             <img src="images/main_9_1.png">
                             <p class="name0">Татьяна и Владимир</p>
                         </div>
-                        <div class="col-10 col-sm-4 col-lg-3">
+                        <div class="col-10 col-sm-2 col-lg-2">
                             <img src="images/main_9_2.png">
                             <p class="name1">Тамара</p>
-                            <p class="name2">Людмила</p>
                         </div>
-                        <div class="col-1 col-sm-2 col-lg-3">
+                        <div class="col-10 col-sm-2 col-lg-2">
+                            <img src="images/main_9_3.png">
+                            <p class="name2">Людмила</p>
+                        </div> 
+                        <div class="col-1 col-sm-3 col-lg-3">
                         </div>
                     </div>
                 </div> 
@@ -264,14 +316,36 @@
                         <p class="none">Остались вопросы?</p>
                         <p class="phone">Звоните 8 (916) 114-93-65</p>
                         <p class="mail">Пишите prprodovoe@yandex.ru</p>
-                        <button class="footer_button">Написать письмо</button>
+                        <button class="footer_button" data-toggle="modal" data-target="#modal_all">Написать письмо</button>
                     </div>
                 </div>
             </div> 
-        </footer>
-    </div>
+        </footer>  
+
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+    <script src="slider.js"></script>
+
+    <div id="modal_all" class="modal fade" role="dialog">
+         <div class="modal-dialog"> 
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-content">  
+                <div class="modal-header"> 
+                    <h4 class="modal-title">Заполните ваши данные и мы<br>перезвоним вам!</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <input type="" name="" placeholder="Имя*">
+                        <input type="" name="" placeholder="E-mail*">
+                        <input type="" name="" placeholder="Телефон*">
+                        <textarea rows="4" placeholder="Текст сообщения*"></textarea>
+                        <button type="submith">Отправить</button>
+                    </form>
+                </div>       
+            </div> 
+        </div>
+    </div>
 </body>
 </html>
